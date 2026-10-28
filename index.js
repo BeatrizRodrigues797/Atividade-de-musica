@@ -15,10 +15,8 @@ const sql = mysql2.createPool({
     database: process.env.NOME_BANCO
 })
 
-app.listen (300, () => {
-
+app.listen (3000, () => {
+    console.log("Servidor online")
 })
 
-function mensagem(){
-    console.log("Servidor online")
-}
+export default app
